@@ -1,0 +1,57 @@
+:root {
+	--chip-bg: rgba(255,255,255,.06);
+	--chip-border: rgba(255,255,255,.18);
+}
+
+body{
+	background:
+		radial-gradient(1200px 800px at 10% -10%, rgba(123,97,255,.12) 0, transparent 60%),
+		radial-gradient(1200px 800px at 110% -10%, rgba(47,179,68,.10) 0, transparent 60%),
+		var(--bs-body-bg);
+}
+
+.chip {
+	display:inline-flex; align-items:center; justify-content:center;
+	min-width: 2.25rem; height: 2.25rem; padding: 0 .6rem;
+	border-radius: .65rem;
+	border: 1px solid var(--chip-border);
+	background: var(--chip-bg);
+	font-weight: 700;
+	transform: translateY(6px);
+	opacity: 0;
+	transition: transform .35s cubic-bezier(.2,.9,.22,1.05), opacity .35s;
+}
+
+.chip.show { 
+	transform: translateY(0); opacity: 1; 
+}
+
+.result-row{
+	min-height: 3.25rem;
+	background: rgba(255,255,255,.04);
+	border: 1px dashed var(--chip-border);
+	border-radius: .75rem;
+	padding: .5rem;
+}
+
+.result-row.hint::before{
+	content:"Click Run to generate values";
+	color: var(--bs-secondary-color);
+	font-style: italic;
+}
+
+.sticky-tools{
+	position: sticky; top: .75rem; z-index: 1030;
+	backdrop-filter: saturate(1.2) blur(6px);
+	border: 1px solid var(--chip-border);
+}
+
+.kbd-badge kbd{ 
+	font-size: .85rem; 
+}
+
+.codepeek {
+	font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+	background: #0a0f22; border: 1px solid var(--chip-border);
+	border-radius: .5rem; padding: .75rem;
+}
