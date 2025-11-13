@@ -25,6 +25,14 @@ By completing this lab, you will:
 
 ---
 
+## Requirements
+
+- document.querySelector()
+- insertAdjacentHTML() or append()
+- for-loop
+
+---
+
 ## 🃏 Features
 
 ### 🔹 Pre-Built Loop Examples
