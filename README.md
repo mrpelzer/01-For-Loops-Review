@@ -25,6 +25,10 @@ By completing this lab, you will:
 
 ---
 
+DEMO: [VIEW](https://output.jsbin.com/fuqekib)
+
+---
+
 ## Requirements
 
 - document.querySelector()
